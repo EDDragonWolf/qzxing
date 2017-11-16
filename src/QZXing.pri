@@ -19,7 +19,9 @@ QT       += core
 DEFINES += QZXING_LIBRARY \
         ZXING_ICONV_CONST \
         DISABLE_LIBRARY_FEATURES
-		 
+
+msvc: DEFINES += __STDC_LIMIT_MACROS
+
 INCLUDEPATH  += $$PWD \
                 $$PWD/zxing
 
